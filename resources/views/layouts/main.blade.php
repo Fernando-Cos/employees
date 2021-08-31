@@ -28,7 +28,7 @@
                     </div>
                     {{-- <i class="fas fa-laugh-wink"></i> --}}
                 </div>
-                <div class="sidebar-brand-text mx-3">Tecno ADM<sup></sup></div>
+                <div class="sidebar-brand-text mx-3">Tecno$Cia <sup>admin</sup></div>
             </a>
             <!-- Divider -->
             {{-- <hr class="sidebar-divider my-0"> --}}
@@ -105,7 +105,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Opções de:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Usuario</a>
+                        <a class="collapse-item" href="{{route('users.index')}}">Usuario</a>
                         <a class="collapse-item" href="utilities-border.html">Função</a>
                         <a class="collapse-item" href="utilities-animation.html">Permição</a>
                         <a class="collapse-item" href="utilities-other.html">Em teste</a>
