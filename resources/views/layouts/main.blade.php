@@ -13,20 +13,20 @@
         rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="{{asset('css/sb-admin.min.css')}}" rel="stylesheet">
-
 </head>
-
 <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    <div class="avatar">
+                        <!-- Avatar image -->
+                        <img class="avatar__image" src="{{asset('images/a.jpg')}}" style="box-shadow: -6px -3px 9px #bebebe, 4px 1px 35px #ffffff;"/>
+                    </div>
+                    {{-- <i class="fas fa-laugh-wink"></i> --}}
                 </div>
                 <div class="sidebar-brand-text mx-3">Tecno ADM<sup></sup></div>
             </a>
@@ -38,15 +38,12 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Principal</span></a>
             </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
-
             <!-- Heading -->
             <div class="sidebar-heading">
                 Opções
             </div>
-
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -62,7 +59,6 @@
                         <a class="collapse-item" href="cards.html" style="color: red">Em teste</a>
                         <a class="collapse-item" href="cards.html" style="color: red">Em teste</a>
                         <a class="collapse-item" href="cards.html" style="color: red">Em teste</a>
-
                     </div>
                 </div>
             </li>
@@ -98,7 +94,6 @@
                         <a class="collapse-item" href="utilities-other.html">Cidade</a>
                         <a class="collapse-item" href="utilities-other.html" style="color: red">Em Teste</a>
                     </div>
-
                     <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUser"
@@ -144,39 +139,32 @@
                     </div>
                 </div>
             </li> --}}
-
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Charts</span></a>
             </li>
-
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tabelas</span></a>
             </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
-
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-
             <!-- Sidebar Message -->
             <div class="sidebar-card d-none d-lg-flex">
                 <img class="sidebar-card-illustration mb-2" src="{{asset('images/a.jpg')}}" alt="..." style="
                 border-radius: 50%;
-                box-shadow: 0 6px 1px 3px rgb(0 170 255 / 28%);
-            ">
+                box-shadow: 0 6px 1px 3px rgb(0 170 255 / 28%);">
                 <p class="text-center mb-2"><strong>TECNO$CIA - ADM</strong> Sistema para verficação de wo no RW!</p>
                 <a class="btn btn-success btn-sm" href="">Acessar</a>
             </div>
-
         </ul>
         <!-- End of Sidebar -->
         <!-- Content Wrapper -->
@@ -202,7 +190,6 @@
                             </div>
                         </div>
                     </form> --}}
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 {{-- 
@@ -229,7 +216,6 @@
                                 </form>
                             </div>
                         </li> --}}
-
                         <!-- Nav Item - Alerts -->
                         {{-- <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
@@ -280,7 +266,6 @@
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                             </div>
                         </li>
-
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
@@ -346,9 +331,7 @@
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
                         </li>
-
                         <div class="topbar-divider d-none d-sm-block"></div> --}}
-
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
@@ -373,20 +356,22 @@
                     </a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Sair
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                        {{ __('Logout') }}
                     </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+                </form>
                 </div>
             </li>
-
         </ul>
-
     </nav>
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Painel Principal</h1>
@@ -396,8 +381,6 @@
                     <div class="row">
                         @yield('content')
                     </div>
-
-
                     {{-- <!-- Content Row -->
                     <div class="row">
 
@@ -484,7 +467,6 @@
                             </div>
                         </div>
                     </div> --}}
-
                    {{--  <!-- Content Row -->
                     <div class="row">
 
@@ -561,7 +543,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Content Row -->
                     <div class="row">
 
@@ -718,7 +699,6 @@
                 <!-- /.container-fluid -->
             </div>
             <!-- End of Main Content -->
-
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -728,20 +708,15 @@
                 </div>
             </footer>
             <!-- End of Footer -->
-
         </div>
         <!-- End of Content Wrapper -->
-
     </div>
     <!-- End of Page Wrapper -->
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
 
-
-    
     <!-- Logout Modal-->
     {{-- <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -761,26 +736,18 @@
             </div>
         </div>
     </div> --}}
-
-
-
     <!-- Bootstrap core JavaScript-->
     <script src="{{ mix('js/app.js')}}"></script>
     {{-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> --}}
-
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <!-- Custom scripts for all pages-->
     <script src="{{ asset('js/sb-admin.main.js')}}"></script>
 {{-- 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
-
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script> --}}
-
 </body>
-
 </html>
