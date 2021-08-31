@@ -83,12 +83,12 @@
             </li>
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item active">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSystem"
+                    aria-expanded="true" aria-controls="collapseSystem">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Configurações</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                <div id="collapseSystem" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Opções de:</h6>
@@ -101,19 +101,19 @@
 
                     <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item active">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities2"
-                    aria-expanded="true" aria-controls="collapseUtilities2">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUser"
+                    aria-expanded="true" aria-controls="collapseUser">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Conf de Users</span>
                 </a>
-                <div id="collapseUtilities2" class="collapse" aria-labelledby="headingUtilities2"
-                    data-parent="#accordionSidebar2">
+                <div id="collapseUser" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Opções de:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Sistema</a>
-                        <a class="collapse-item" href="utilities-border.html">País</a>
-                        <a class="collapse-item" href="utilities-animation.html">Departamento</a>
-                        <a class="collapse-item" href="utilities-other.html">Cidade</a>
+                        <a class="collapse-item" href="utilities-color.html">Usuario</a>
+                        <a class="collapse-item" href="utilities-border.html">Função</a>
+                        <a class="collapse-item" href="utilities-animation.html">Permição</a>
+                        <a class="collapse-item" href="utilities-other.html">Em teste</a>
                         <a class="collapse-item" href="utilities-other.html" style="color: red">Em Teste</a>
                     </div>
                 </div>
@@ -169,28 +169,26 @@
 
             <!-- Sidebar Message -->
             <div class="sidebar-card d-none d-lg-flex">
-                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+                <img class="sidebar-card-illustration mb-2" src="{{asset('images/a.jpg')}}" alt="..." style="
+                border-radius: 50%;
+                box-shadow: 0 6px 1px 3px rgb(0 170 255 / 28%);
+            ">
+                <p class="text-center mb-2"><strong>TECNO$CIA - ADM</strong> Sistema para verficação de wo no RW!</p>
+                <a class="btn btn-success btn-sm" href="">Acessar</a>
             </div>
 
         </ul>
         <!-- End of Sidebar -->
-
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
-
             <!-- Main Content -->
             <div id="content">
-
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-
                     <!-- Topbar Search -->
                     {{-- <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
