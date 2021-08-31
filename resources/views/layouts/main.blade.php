@@ -34,7 +34,7 @@
             {{-- <hr class="sidebar-divider my-0"> --}}
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{route('home')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Principal</span></a>
             </li>
@@ -372,11 +372,20 @@
                 <!-- End of Topbar -->
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    <div class="container">
+                        <!-- The container -->
+                        <div class="container__wrapper">
+                            <!-- The ribbon -->
+                            <div class="container__ribbon">
+                                ...
+                            </div>
+                        </div>
+                    </div>
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Painel Principal</h1>
+                        <h1 class="h3 mb-0 text-gray-800">@yield('title','Painel Principal')</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                        <i class="fas fa-download fa-sm text-white-50"></i> Gerar Relátorio</a>
+                        <i class="fas fa-download fa-sm text-white-50"></i>Gerar Relátorio</a>
                     </div>
                     <div class="row">
                         @yield('content')
@@ -696,6 +705,7 @@
                         </div>
                     </div> --}}
                 </div>
+               
                 <!-- /.container-fluid -->
             </div>
             <!-- End of Main Content -->
