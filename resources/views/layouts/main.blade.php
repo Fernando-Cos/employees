@@ -86,7 +86,7 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
-                    <span>Gerenciamento</span>
+                    <span>Configurações</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
@@ -97,21 +97,35 @@
                         <a class="collapse-item" href="utilities-animation.html">Departamento</a>
                         <a class="collapse-item" href="utilities-other.html">Cidade</a>
                         <a class="collapse-item" href="utilities-other.html" style="color: red">Em Teste</a>
+                    </div>
 
+                    <!-- Nav Item - Utilities Collapse Menu -->
+                <li class="nav-item active">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities2"
+                    aria-expanded="true" aria-controls="collapseUtilities2">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Conf de Users</span>
+                </a>
+                <div id="collapseUtilities2" class="collapse" aria-labelledby="headingUtilities2"
+                    data-parent="#accordionSidebar2">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opções de:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Sistema</a>
+                        <a class="collapse-item" href="utilities-border.html">País</a>
+                        <a class="collapse-item" href="utilities-animation.html">Departamento</a>
+                        <a class="collapse-item" href="utilities-other.html">Cidade</a>
+                        <a class="collapse-item" href="utilities-other.html" style="color: red">Em Teste</a>
                     </div>
                 </div>
             </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
-
             <!-- Heading -->
             <div class="sidebar-heading">
-                Addons
+                Outros
             </div>
-
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
@@ -129,7 +143,7 @@
                         <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
-            </li>
+            </li> --}}
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
@@ -142,7 +156,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                    <span>Tabelas</span></a>
             </li>
 
             <!-- Divider -->
